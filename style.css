@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-
+/* style.css */
 body {
   margin: 0;
   font-family: 'Dancing Script', cursive, Arial, sans-serif;
@@ -10,22 +9,15 @@ body {
   height: 100vh;
   overflow: hidden;
   color: #fff;
-}
-
-#bgVideo {
-  position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  object-fit: cover;
-  z-index: -1;
-  filter: brightness(0.5);
+  text-align: center;
 }
 
 .text-container {
-  text-align: center;
-  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
   position: relative;
 }
 
@@ -33,9 +25,7 @@ body {
   font-size: 2.2em;
   opacity: 0;
   transition: opacity 1.8s ease-in-out;
-  position: absolute;
-  width: 100%;
-  line-height: 1.5em;
+  margin: 10px 0;
 }
 
 #startBtn {
@@ -46,7 +36,6 @@ body {
   background-color: #ff4d6d;
   color: white;
   cursor: pointer;
-  z-index: 10;
   transition: background-color 0.3s;
 }
 
